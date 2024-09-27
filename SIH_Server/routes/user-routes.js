@@ -8,4 +8,10 @@ const {
 router.get("/test", testFunction);
 router.post("/query", queryFunction);
 
+router.post("/payment", (req, res, next) => {
+  res.json({
+    message: "Working",
+  })
+})
+
 module.exports = router;
